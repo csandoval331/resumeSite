@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link rel="icon" href="projects_files/cs-logo2.png" />
+    <link
+      rel="stylesheet"
+      href="projects_files/bootstrap.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="projects_files/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light navbar-expand-lg">
+      <span class="navbar-brand mb-0 h1">
+        <img src="projects_files/cs-logo2.png" width="30px"
+      /></span>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="http://localhost/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="http://localhost/projects.html" class="nav-link"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a href="http://localhost/resume.html" class="nav-link">Resume</a>
+          </li>
+        </ul>
+      </div>
+      <a
+        href="https://www.linkedin.com/in/charly-sandoval-2017/"
+        target="_blank"
+        ><img src="projects_files/linkedin.png" width="30rem" />
+        charly-sandoval-2017</a
+      ><a href="https://github.com/csandoval331/login-app" target="_blank"
+        ><img src="projects_files/github.png" width="30rem" /> csandoval331</a
+      ><button
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="navbar-toggler"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <div class="container h-100">
+      <div class="jumbotron">
+        <h1>Projects Site</h1>
+        <p>
+          This site will be a collage of projects that I have completed. This
+          site may be subject to neglect if I am too busy to update it.
+        </p>
+        <p>
+          This project it self is being hosted on my raspberry pi. I am using
+          nginx(a webserver) and cloudflare(a dns server) to host this site with
+          https credentials.
+        </p>
+        <p>
+          If enough interest is shown, i will be post a tutorial. Posting
+          tutorials is not my forte, but willing to give it a shot.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="card">
+            <img src="projects_files/one.png" class="card-img" />
+            <div class="card-body">
+              <h4 class="card-title">LoginApp</h4>
+              <a
+                href="https://login.charlysandoval.tk/"
+                target="_blank"
+                style="margin-right: 10px"
+                >Site: login.charlysandoval.tk</a
+              ><a
+                href="https://github.com/csandoval331/resumeApp"
+                target="_blank"
+                style="margin-right: 10px"
+                >proj: github.com/csandoval331</a
+              >
+              <div style="margin-top: 1rem"></div>
+              <h5>About</h5>
+              <p>
+                In this app, you will be able to create an account, loggin to
+                view your information, and loggout
+              </p>
+              <h5>What I learned</h5>
+              <p>
+                For the longest, I never understood logins, so I wanted to
+                challenge my self
+              </p>
+              <p>
+                This app is running on node, express for routing, jade for html
+                templating, passport for authentication, sessions for
+                verification, and redis for quick login.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="card">
+            <img src="projects_files/two.png" class="card-img" />
+            <div class="card-body">
+              <h4 class="card-title">OwnCloud Server</h4>
+              <a
+                href="https://storage.charlysandoval.tk/"
+                target="_blank"
+                style="margin-right: 10px"
+                >Site: storage.charlysandoval.tk</a
+              ><a
+                href="https://owncloud.com/"
+                target="_blank"
+                style="margin-right: 10px"
+                >proj: owncloud.com/</a
+              >
+              <div style="margin-top: 1rem"></div>
+              <h5>Description</h5>
+              <p>
+                OwnCloud is a free and open-source, thereby allowing anyone to
+                install and operate.
+              </p>
+              <h5>What I learned</h5>
+              <p>I wanted to familiarize my self with docker.</p>
+              <p>
+                Learned about networking, exposing ports, docker-compose, and
+                more.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="card">
+            <img src="projects_files/three.png" class="card-img" />
+            <div class="card-body">
+              <h4 class="card-title">Button Counter</h4>
+              <a
+                href="https://counter.charlysandoval.tk/"
+                target="_blank"
+                style="margin-right: 10px"
+                >Site: counter.charlysandoval.tk</a
+              ><a
+                href="https://github.com/csandoval331/counter-app"
+                target="_blank"
+                style="margin-right: 10px"
+                >proj: github.com/csandoval331</a
+              >
+              <div style="margin-top: 1rem"></div>
+              <h5>Description</h5>
+              <p>
+                Wanted to create an app that would allow multiple users to click
+                on an increment button. The increment button in turns increments
+                the number and updates all users views with the most up to date
+                number
+              </p>
+              <h5>What I learned</h5>
+              <p>
+                It was fun to learn about server-sent events. Server-sent events
+                are events sent from the server. This is unique due to how
+                clients usuall interact with servers. Clients connect to server
+                and get updates. But with server-sent events, the server is
+                connecting to the client and sending updates.
+              </p>
+              <p>Used nodejs,express, jade, and socket.io to create this app</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="card">
+            <img src="projects_files/four.png" class="card-img" />
+            <div class="card-body">
+              <h4 class="card-title">POS app</h4>
+              <a
+                href="https://store.charlysandoval.tk/"
+                target="_blank"
+                style="margin-right: 10px"
+                >Site: store.charlysandoval.tk</a
+              >
+              <div style="margin-top: 1rem"></div>
+              <h5>Description</h5>
+              <p>
+                This app is meant to be used by a store owner with a barcode
+                scanner. User scan items, gets added to receipt, and prints out
+                receipt.
+              </p>
+              <h5>What I learned</h5>
+              <p>
+                This was a 2 month long project. I used relation tables to
+                figure out how everything is connected, in terms of the
+                database, used node and express for the server, mongoose and
+                mongdb for database read and writes, and a lot more. This
+                project pushed the limits of my patience, creativity, and
+                knowledge
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="projects_files/jquery-3.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="projects_files/popper.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="projects_files/bootstrap.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
